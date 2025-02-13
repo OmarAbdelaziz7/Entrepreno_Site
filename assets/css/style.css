@@ -1,0 +1,77 @@
+.navbar {
+    background: linear-gradient(to right, #cfb1eb, #731974);
+}
+
+.img{
+    margin-left: 20px;
+    width: 80px;
+}
+.navspan{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 20px;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: #8021bc;
+}
+
+.footer{
+    background: linear-gradient(to left, #cfb1eb, #731974);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+.head{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.footer hr {
+    width: 50px;
+    height: 2px;
+    background-color: #c49fc5;
+    border: none;
+    margin: 5px auto;
+    opacity: 0.9;
+}
+
+.footer p, .footer ul {
+    margin: auto;
+    padding-top: 15px;
+    list-style: none;
+
+}
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.icons a{
+    font-size: 24px;
+    color: white;
+    margin: 0 12px; 
+    padding-top: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.icons a:hover {
+    transform: scale(1.2);
+    color: #731974 ;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
