@@ -21,13 +21,13 @@
         margin: 50px auto;
       }
       .contact-form h2 {
-        color: #6a5acd; /* Soft and eye-friendly shade from the logo */
+        color: #731974; /* Soft and eye-friendly shade from the logo */
         font-weight: bold;
         margin-bottom: 20px;
         text-align: center;
       }
       .form-label {
-        color: #6a5acd; /* Consistent soft purple shade for labels */
+        color: #731974; /* Consistent soft purple shade for labels */
         font-weight: 500;
       }
       .form-control {
@@ -36,20 +36,8 @@
         padding: 10px;
       }
       .form-control:focus {
-        border-color: #6a5acd; /* Soft purple border on focus */
+        border-color: #731974; /* Soft purple border on focus */
         box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
-      }
-      .btn-primary {
-        background-color: #6a5acd; /* Soft purple button */
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        width: 100%;
-        transition: background-color 0.3s ease;
-      }
-      .btn-primary:hover {
-        background-color: #5a4bb5; /* Slightly darker soft purple on hover */
       }
       #responseMessage {
         color: #28a745; /* Green for success message */
@@ -60,6 +48,8 @@
     </style>
   </head>
   <body>
+    <div id="navbar-container"></div>
+
     <div class="container">
       <div class="contact-form">
         <h2>Contact Us</h2>
@@ -94,17 +84,64 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button
+            type="submit"
+            class="btn"
+            id="form-button"
+            style="
+              background-color: #731974;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              font-size: 16px;
+              border-radius: 5px;
+              width: 100%;
+              transition: background-color 0.3s ease;
+            "
+          >
+            Submit
+          </button>
         </form>
         <div id="responseMessage" class="mt-3"></div>
       </div>
     </div>
 
+    <div id="footer-container"></div>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    
     <!-- Custom JS -->
     <script>
+      // hover effect for submit button
+      const btn = document.getElementById("form-button");
+
+      btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#483d8b"; // Darker purple on hover
+      });
+
+      btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "#6a5acd"; // Revert to original color
+      });
+
+      // Fetch and insert the navbar
+      fetch("Navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+
+      // Fetch and insert the footer
+      fetch("Footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+
+      // handle form submission
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
@@ -117,7 +154,7 @@
           };
 
           fetch(
-            "https://script.google.com/macros/s/AKfycbyAZz1Ct7Z0IS5LHqBjsy0kjLuRjqXcSRYMiSFjdHFp7uBTJDAh49muAtUVnP_u1Bbw/exec",
+            "https://script.google.com/macros/s/AKfycbxt2iLZT1gFS6LfY400Tzls1donupshNr_FRII7oEU/dev",
             {
               method: "POST",
               body: JSON.stringify(formData),
