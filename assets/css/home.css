@@ -7,6 +7,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-inline: 85px;
+    padding-top: 10px;
 }
 header h1{
     color: #6b27d9;
