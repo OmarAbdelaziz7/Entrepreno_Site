@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Entrepreno - Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Styling */
+        .top-bar {
+            background: linear-gradient(135deg, #9B5FB3 0%, #814D91 50%, #6A3A78 100%);
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+
+        .brand-name {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation */
+        .nav-container {
+            background: #814D91;
+            padding: 12px 30px;
+            border-bottom: 3px solid #9B5FB3;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            color: #6A3A78;
+            font-size: 25px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .intro-section {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .offer-title {
+            color: #6A3A78;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .offer-description {
+            color: #666;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .service-card {
+            background: #F8F2FC;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-left: 4px solid #9B5FB3;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #814D91;
+        }
+
+        #services h5 {
+            color: #1E28D9;
+        }
+
+        .services {
+            position: relative;
+            background-color: white;
+            padding: 30px 20px 40px 20px;
+            width: 350px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .service-title {
+            color: #6A3A78;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .service-link {
+            display: inline-block;
+            color: #9B5FB3;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #6A3A78;
+            transform: translateX(5px);
+        }
+        .offer{
+            color: #6A3A78;
+            font-size: xx-large;
+        }
+
+        .service-text{
+            font-size: large;
+        }
+
+        .ss{
+            color: #590aae;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: linear-gradient(135deg, #9B5FB3 0%, #814D91 50%, #6A3A78 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./assets/images/Enterpreno.png" alt="Logo" class="logo-img" />
+            <span class="ms-2 logo-text">Entrepreno</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h6 class="text-center  ss mt-5">SERVICES</h6>
+      <h5 class="display-5 offer text-center">
+          What We Offer?
+      </h5>
+  
+      <h5 class="text-center service-text">
+  
+          At Entrepreno, we provide specialized marketing solutions designed to meet the unique needs of the
+          educational sector. <br> Our services are tailored to help teachers, private schools, universities, and
+          educational centers enhance their visibility, <br> attract more students, and build lasting connections with
+          their communities.
+  
+      </h5>
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="services-grid">
+            <!-- Social Media Marketing -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/9lkopc4h5dla7knko3gwa/DALL-E-2025-02-16-20.17.03-A-modern-digital-illustration-representing-Social-Media-Marketing-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-feature.webp?rlkey=m5s2dnybwxuuomn3krhjcsmja&raw=1"
+                    class="service-image" alt="Social Media Marketing">
+                <div class="card-content">
+                    <h3 class="service-title">Social Media Marketing</h3>
+                    <p class="service-description">
+                        Creating and managing engaging content to increase brand awareness and foster online
+                        communities.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/sou7h7chtnjrfiy05ze5q/DALL-E-2025-02-16-20.17.12-A-modern-digital-illustration-representing-Digital-Marketing-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-features-a-m.webp?rlkey=1elkyguca6ym4sg33zr1vqkl8&raw=1"
+                    class="service-image" alt="Digital Marketing">
+                <div class="card-content">
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">
+                        Data-driven campaigns including SEO, PPC, and email marketing to maximize online presence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/ydx68cq61q1w9fh03h9ix/DALL-E-2025-02-16-20.17.17-A-modern-digital-illustration-representing-Web-Development-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-showcases-deve.webp?rlkey=7kqa0wh8xbr08g0ctneu17laa&raw=1"
+                    class="service-image" alt="Web Development">
+                <div class="card-content">
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Designing responsive, user-friendly websites that reflect your brand identity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/90t7ilr03yhbntaqdxw53/DALL-E-2025-02-16-20.17.23-A-modern-digital-illustration-representing-Graphic-Design-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-features-a-crea.webp?rlkey=v89n1uspt7hxvwitho91xm07l&raw=1"
+                    class="service-image" alt="Graphic Design">
+                <div class="card-content">
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">
+                        Crafting visually appealing designs for all your promotional materials.
+                    </p>
+                    <a href="https://linktr.ee/entreprenodesigns" class="service-link" target="_blank">
+                        View More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Production -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/5u6jjeo0fbvhzwfesu3rm/DALL-E-2025-02-16-20.17.29-A-modern-digital-illustration-representing-Video-Production-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-showcases-a-f.webp?rlkey=13bmiz4sp8vywpf1lqgxom79n&raw=1"
+                    class="service-image" alt="Video Production">
+                <div class="card-content">
+                    <h3 class="service-title">Video Production</h3>
+                    <p class="service-description">
+                        High-quality video production for promotional and educational purposes.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1zhFWlKMGadmlS768P1JP97hDVZcFdkCx"
+                        class="service-link" target="_blank">
+                        View More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Educational Workshops & Training -->
+            <div class="service-card">
+                <img src="https://www.dropbox.com/scl/fi/ykrh7dgycffi80uov4vbc/DALL-E-2025-02-18-00.20.47-A-modern-digital-illustration-representing-Educational-Platforms-using-a-purple-themed-color-palette-9B5FB3-814D91-6A3A78-.-The-design-features.webp?rlkey=rpbqasj3zdb4bwvtizhijb6th&raw=1"
+                    class="service-image" alt="Educational Workshops">
+                <div class="card-content">
+                    <h3 class="service-title">Educational Workshops & Training</h3>
+                    <p class="service-description">
+                        Offering courses and sessions on marketing and business for young professionals and educational
+                        staff.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer pt-5 pb-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">Enterpreno</h5>
+                    <hr>
+                    <p>At Entrepreno, we provide specialized marketing solutions designed to meet the unique needs of the educational sector.</p>
+                </div>
+
+
+                
+                
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">services</h5>
+                    <hr>
+                    <ul>
+                        <li class="mb-3">Social Media Marketing</li>
+                        <li class="mb-3">Digital Marketing</li>
+                        <li class="mb-3">Web Development</li>
+                        <li class="mb-3"><a href="https://linktr.ee/entreprenodesigns" target="_blank" style="text-decoration: none; color: white;">Graphic Design</a></li>
+                        <li class="mb-3"><a href="https://drive.google.com/drive/folders/1zhFWlKMGadmlS768P1JP97hDVZcFdkCx?usp=drive_link" style="text-decoration: none; color: white;" target="_blank">Video Production</a></li>
+                        <li class="mb-3">Educational Workshops & Training</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">contact</h5>
+                    <hr>
+                    <p>Contact Us</p><br>
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/share/18yPmzTQfE/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/entrepreno24?igsh=MjhwMXk0NThxNGR2"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/entrepren0/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://whatsapp.com/channel/0029Vaj6i4ED8SDzcpsLev1M"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a target="_blank" href="mailto:entrepren08@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a target="_blank" href="tel:+201022304704"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Copyright: <strong>Entrepreno</strong>
+        </div>
+    
+    </div>
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

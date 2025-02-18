@@ -1,28 +1,49 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .navbar {
-    background: linear-gradient(to right, #cfb1eb, #731974);
-}
-
-.img{
-    margin-left: 20px;
-    width: 80px;
-}
-.navspan{
+    background: linear-gradient(45deg, #d4c5e6, rgb(114, 10, 114));
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:bold;
-}
-
-.navbar .navbar-nav .nav-link{
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 20px;
-}
-
-.navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover{
-    color: #8021bc;
-}
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    transition: color 0.3s;
+  }
+  .logo-img {
+    height: 40px; /* Adjust logo height */
+    width: auto; /* Maintain image proportions */
+  }
+  
+  /* Logo Text */
+  .logo-text {
+    font-size: 1.2rem; /* Adjust text size */
+    font-weight: bold; /* Make text bold */
+    color: #ffffff; /* Adjust color */
+    text-transform: uppercase; /* Optional: Make text uppercase */
+  }
+  .nav-link {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #47055c !important;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2880,80,80,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 
 .footer{
     background: linear-gradient(to left, #cfb1eb, #731974);
