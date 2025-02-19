@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> -->
     <title>Home page</title>
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1>Entrepreno</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/images/Enterpreno.png" alt="Logo" class="logo-img" />
+                <span class="ms-2 logo-text">Entrepreno</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="ulLinks">
-            <a href="#">Home</a>
-            <a href="#">Service</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-        <div>
-            <button type="submit" class="btn1">Get Started</button>
-        </div>
-    </header>
+    </nav>
+    <div class="container-fluid">
 
-    <section class="offers">
-        <div class="offersText">
-            <h1>What We Offer</h1>
-            <p>At Entrepreno, we provide specialized marketing solutions designed to meet the unique needs of the educational sector. Our services are tailored to help teachers, private schools, universities, and educational centers enhance their visibility, attract more students, and build lasting connections with their communities.</p>
-            <button>Learn More</button>
-        </div>
-        <div>
-            <img src="/images/Copy_of_Entrepreno_II-removebg-preview.png" alt="Entrepreno">
-        </div>
-    </section>
+        <section class="offers">
+            <div class="offersText">
+                <h1>What We Offer</h1>
+                <p><b>At Entrepreno, we provide specialized marketing solutions designed to meet the unique needs of the
+                        educational sector. Our services are tailored to help teachers, private schools, universities,
+                        and educational centers enhance their visibility, attract more students, and build lasting
+                        connections with their communities.</b></p>
+                <a class="btn text-white" href="About.html">Learn More</a>
+            </div>
+            <div>
+                <img src="assets/images/FB_IMG_1739825127539-removebg-preview.png" alt="Entrepreno">
+            </div>
+        </section>
 
-    <hr style="width: 700px;"/>
-    
-    <section>
-        <div class="hService">
-            <h1>Our Services</h1>
-        </div>
-        <div class="services">
-            <div class="boxService">
-                <i class="fa-solid fa-share-nodes"></i>
-                <h1>Social Media Marketing</h1>
-                <p>Creating and managing engaging content to increase brand awareness and foster online communities.</p>
+        <hr style="width: 700px;" />
+
+        <section>
+            <div class="hService">
+                <h1>Our Services</h1>
             </div>
-            <div class="boxService">
-                <i class="fa-solid fa-chart-line"></i>
-                <h1>Digital Marketing</h1>
-                <p>Developing data-driven campaigns, including SEO, PPC, and email marketing, to maximize online presence.</p>
-            </div>
-            <div class="boxService">
-                <i class="fa-solid fa-code"></i>
-                <h1>Web Development</h1>
-                <p>Designing responsive, user-friendly websites that reflect the institution's values and enhance user experience.</p>
-            </div>
-            <div class="boxService">
+            <div class="services">
+                <div class="boxService">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h1>Social Media Marketing</h1>
+                    <p>Creating and managing engaging content to increase brand awareness and foster online communities.
+                    </p>
+                </div>
+                <div class="boxService">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h1>Digital Marketing</h1>
+                    <p>Developing data-driven campaigns, including SEO, PPC, and email marketing, to maximize online
+                        presence.</p>
+                </div>
+                <div class="boxService">
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Development</h1>
+                    <p>Designing responsive, user-friendly websites that reflect the institution's values and enhance
+                        user experience.</p>
+                </div>
+                <!-- <div class="boxService">
                 <i class="fa-solid fa-palette"></i>
                 <h1>Graphic Design</h1>
                 <p>Crafting visually appealing designs for brochures, banners, logos, and promotional materials.</p>
@@ -73,28 +100,87 @@
                 <i class="fa-solid fa-person-chalkboard"></i>
                 <h1>Educational Workshops</h1>
                 <p>Offering courses and sessions on marketing and business for young professionals and educational staff.</p>
+            </div> -->
+            </div>
+        </section>
+
+        <hr style="width: 700px;" />
+
+        <section class="offers">
+            <div class="offersText">
+                <h1>About Us</h1>
+                <p>At Entrepreno, we're not just a marketing agency—we're your dedicated partner in shaping the future
+                    of education through strategic marketing. Specializing in the educational sector, we empower
+                    teachers, private schools, universities, and educational centers with tailored solutions that
+                    elevate their brand, attract the right audience, and drive meaningful engagement.</p>
+                <p>Our expertise spans social media marketing, digital marketing, web development, graphic design, and
+                    video editing, ensuring your educational institution thrives in today's digital landscape. Beyond
+                    services, we're committed to nurturing young talent through courses, sessions, and insightful
+                    resources on marketing and business, fostering the next generation of innovators.</p>
+                <p style="color: #420f55;">Your Vision ,Our Mission</p>
+            </div>
+
+
+            <img src="/images/FB_IMG_1739825127539.jpg" alt="Entrepreno">
+        </section>
+   
+    </div>
+
+    <div class="footer pt-5 pb-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">Enterpreno</h5>
+                    <hr>
+                    <p>At Entrepreno, we provide specialized marketing solutions designed to meet the unique needs of
+                        the educational sector.</p>
+                </div>
+
+
+
+
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">services</h5>
+                    <hr>
+                    <ul>
+                        <li class="mb-3">Social Media Marketing</li>
+                        <li class="mb-3">Digital Marketing</li>
+                        <li class="mb-3">Web Development</li>
+                        <li class="mb-3"><a href="https://linktr.ee/entreprenodesigns" target="_blank"
+                                style="text-decoration: none; color: white;">Graphic Design</a></li>
+                        <li class="mb-3"><a
+                                href="https://drive.google.com/drive/folders/1zhFWlKMGadmlS768P1JP97hDVZcFdkCx?usp=drive_link"
+                                style="text-decoration: none; color: white;" target="_blank">Video Production</a></li>
+                        <li class="mb-3">Educational Workshops & Training</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-6 mb-5 col-lg-4">
+                    <h5 class="head">contact</h5>
+                    <hr>
+                    <p>Contact Us</p><br>
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/share/18yPmzTQfE/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/entrepreno24?igsh=MjhwMXk0NThxNGR2"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/entrepren0/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://whatsapp.com/channel/0029Vaj6i4ED8SDzcpsLev1M"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a target="_blank" href="mailto:entrepren08@gmail.com"><i
+                                class="fa-regular fa-envelope"></i></a>
+                        <a target="_blank" href="tel:+201022304704"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    
-    <hr style="width: 700px;"/>
-
-    <section class="offers">
-        <div class="offersText">
-            <h1>About Us</h1>
-            <p>At Entrepreno, we're not just a marketing agency—we're your dedicated partner in shaping the future of education through strategic marketing. Specializing in the educational sector, we empower teachers, private schools, universities, and educational centers with tailored solutions that elevate their brand, attract the right audience, and drive meaningful engagement.</p>
-            <p>Our expertise spans social media marketing, digital marketing, web development, graphic design, and video editing, ensuring your educational institution thrives in today's digital landscape. Beyond services, we're committed to nurturing young talent through courses, sessions, and insightful resources on marketing and business, fostering the next generation of innovators.</p>
-            <p style="color: #6b27d9;">Your Vision ,Our Mission</p>
+        <div class="footer-bottom">
+            © 2024 Copyright: <strong>Entrepreno</strong>
         </div>
-        <div>
-            <img src="/images/FB_IMG_1739825127539.jpg" alt="Entrepreno">
-        </div>
-    </section>
 
-    <footer>
-        <h1>Ready to Transform Your Educational Institution?</h1>
-        <p>Let's work together to create impactful marketing solutions tailored to your needs.</p>
-        <button>Contact Us Today</button>
-    </footer>
+    </div>
 </body>
+
 </html>
